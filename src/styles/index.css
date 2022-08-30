@@ -1,0 +1,345 @@
+@import url("https://use.typekit.net/wyf5ryh.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+main {
+  display: block;
+}
+
+html {
+  font-size: 80%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "effra", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+input[type=text], input[type=submit], input[type=email], input[type=tel],
+input[type=url], input[type=search], textarea, select,
+option {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Algemeen */
+body {
+  overflow-x: hidden;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: rgb(40, 52, 124);
+  background: linear-gradient(90deg, rgb(40, 52, 124) 0%, rgb(29, 35, 79) 100%);
+  font-family: "effra", sans-serif;
+}
+
+main {
+  min-height: 100px;
+  font-family: "effra", sans-serif;
+}
+
+/* Einde Algemeen */
+/* Navigatie */
+.navigatie {
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  left: -800px;
+  z-index: 110;
+  transition: all 0.5s ease-out;
+  padding: 20px;
+  top: 0;
+  overflow: scroll;
+}
+.navigatie > h2 {
+  font-size: 20px;
+  color: rgb(40, 52, 124);
+  margin-top: 30px;
+  font-weight: 700;
+}
+.navigatie img {
+  width: 60px;
+}
+.navigatie a {
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  margin: 20px 0;
+  transition: all 0.6s;
+}
+.navigatie a:hover {
+  transform: scale(1.07) translateX(10px);
+}
+.navigatie a i {
+  width: 40px;
+  height: 40px;
+  border-radius: 200px;
+  border: 0.5px solid #f2f2f2;
+  color: #252525;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+.navigatie a div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.navigatie a div h2 {
+  font-weight: 700;
+  color: #252525;
+  font-size: 16px;
+}
+.navigatie a div h3 {
+  font-weight: 400;
+  font-size: 12px;
+  color: #858585;
+  margin-bottom: 5px;
+}
+
+.navigatie.active {
+  left: 0;
+}
+
+.navigatie_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigatie_top i {
+  cursor: pointer;
+  font-size: 30px;
+  padding: 15px 20px;
+  margin-right: -20px;
+}
+
+.navigatie .settings {
+  padding-top: 30px;
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  border-top: 1px solid #f2f2f2;
+}
+.navigatie .settings a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+  text-decoration: none;
+  color: #252525;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.navigatie .settings a i {
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s;
+  border-radius: 200px;
+  color: #28347C;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  border: none;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+.navbar h1 {
+  font-size: 20px;
+  color: white;
+  font-family: "effra", sans-serif;
+}
+.navbar i {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Einde Navigatie */
+/* Home */
+.home_switch {
+  display: flex;
+  justify-content: flex-start;
+  padding: 25px;
+}
+.home_switch div {
+  color: white;
+  opacity: 0.5;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.home_switch div.active {
+  opacity: 1;
+}
+
+.home_content {
+  padding: 0 25px;
+}
+.home_content .upcoming_launch {
+  padding: 15px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.home_content .upcoming_launch img {
+  width: 100px;
+  margin-right: 20px;
+}
+.home_content .upcoming_launch h2 {
+  font-size: 18px;
+  color: #28347C;
+  font-weight: 700;
+}
+.home_content .upcoming_launch h3 {
+  font-size: 12px;
+  color: #898989;
+  margin-bottom: 5px;
+}
+.home_content a {
+  background-color: #3952CB;
+  border-radius: 200px;
+  padding: 15px 40px;
+  color: white;
+  margin: 0 auto;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.home_content > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Einde Home */
+.scrollPage {
+  height: 100vh;
+  overflow: auto;
+  padding-bottom: 50px;
+}
+
+/* Rockets */
+.rockets {
+  padding: 0 15px;
+}
+
+.rocket {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.rocket img {
+  width: 100%;
+}
+.rocket div {
+  padding: 20px;
+}
+.rocket div h2 {
+  font-size: 20px;
+  color: #1D234F;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.rocket div p {
+  font-size: 16px;
+  line-height: 170%;
+  font-weight: 200;
+}
+
+/* Einde Rockets */
+
+/*# sourceMappingURL=index.css.map */
